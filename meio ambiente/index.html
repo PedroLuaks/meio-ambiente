@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo de Reciclagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Jogo de Reciclagem ♻️</h1>
+<p>Arraste cada item para o coletor correto!</p>
+<div id="pontuacao">Pontuação: 0</div>
+
+<div class="lixos">
+  <img src="https://cdn-icons-png.flaticon.com/128/7952/7952181.png" alt="Garrafa PET" draggable="true" id="garrafa" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/128/2367/2367590.png" alt="Sacola Plástica" draggable="true" id="sacola" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/3757/3757670.png" alt="Folha de Papel" draggable="true" id="folha" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/128/685/685388.png" alt="Caixa de Papelão" draggable="true" id="caixa" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/128/6723/6723011.png" alt="Garrafa de Vidro" draggable="true" id="garrafavidro" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/704/704141.png" alt="Copo de Vidro" draggable="true" id="copo" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Casca de Banana" draggable="true" id="casca" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="Resto de Comida" draggable="true" id="comida" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Lata" draggable="true" id="lata" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/2933/2933821.png" alt="Prego" draggable="true" id="prego" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/3306/3306603.png" alt="Celular Quebrado" draggable="true" id="eletronico" class="item">
+  <img src="https://cdn-icons-png.flaticon.com/512/3522/3522158.png" alt="Pilha" draggable="true" id="pilha" class="item">
+</div>
+
+<div class="coletores">
+  <div class="coletor" data-aceita="garrafa sacola">Vermelho<br>(Plástico)</div>
+  <div class="coletor" data-aceita="folha caixa">Azul<br>(Papel)</div>
+  <div class="coletor" data-aceita="copo garrafavidro">Verde<br>(Vidro)</div>
+  <div class="coletor" data-aceita="comida casca">Marrom<br>(Orgânico)</div>
+  <div class="coletor" data-aceita="lata prego">Amarelo<br>(Metal)</div>
+  <div class="coletor" data-aceita="eletronico pilha">Cinza<br>(Eletrônico)</div>
+</div>
+
+<div id="mensagem"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
